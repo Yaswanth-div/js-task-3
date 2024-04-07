@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            height: 60px;
+            width: 150px;
+            position: absolute;
+           bottom:350px; 
+        }
+     
+    </style>
+</head>
+<body style="display: flex;align-items:center;justify-content: center;">
+   
+    
+    <script>
+       var btn = document.createElement("button");
+       document.body.appendChild(btn);
+       btn.innerText = "Click here";
+       btn.onclick = apply; 
+
+       function apply() {
+           var colors = ["blue", "red", "green", "yellow", "pink", "#007bff","aliceblue",":chartreuse","lemonchiffon"];
+           var randomIndex = Math.floor(Math.random() * colors.length); 
+            var randomColor = colors[randomIndex]
+            document.body.style.backgroundColor = randomColor; 
+       }
+    </script>
+    
+</body>
+</html>
